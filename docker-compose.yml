@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  flaskproject:
+    image: flaskproject
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5003:5003
